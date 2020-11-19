@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'faker',  '~> 1.7.3'
 gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -32,7 +33,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave',  '1.2.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -65,6 +67,7 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
